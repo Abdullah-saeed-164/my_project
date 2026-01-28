@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Café - Contact Form</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Mea+Culpa&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+
+    body{
+      font-family:'Roboto',sans-serif;
+      background:#000;
+      color:white;
+      overflow-x:hidden;
+      background: radial-gradient(circle, rgba(184, 57, 57, 1) 30%, rgba(199, 199, 199, 1) 100%);
+    }
+
+    /* HEADER */
+    header{
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      padding:15px 70px;
+      background:#b83939;
+      color:white;
+      z-index:10;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      box-shadow:0 0 15px black;
+      background: radial-gradient(circle, rgba(184, 57, 57, 1) 30%, rgba(199, 199, 199, 1) 100%);
+
+    }
+
+    header h1{
+      font-family:"Mea Culpa",cursive;
+      font-size:2.8rem;
+    }
+
+    nav{
+      display:flex;
+      gap:25px;
+    }
+    nav a{
+      color:white;
+      text-decoration:none;
+      padding:8px 14px;
+      font-weight:600;
+      border-radius:8px;
+      transition:0.3s;
+    }
+    nav a:hover{
+      border:2px solid white;
+      padding:8px 30px;
+    }
+
+    /* FORM */
+    .form{
+      width:90%;
+      max-width:650px;
+      margin:160px auto 40px;
+      padding:40px;
+      border-radius:15px;
+      background:#111;
+      box-shadow:0 0 25px rgba(255,69,0,0.6);
+    }
+
+    .form label{
+      font-size:1rem;
+      margin-bottom:6px;
+      display:block;
+    }
+
+    .form input,
+    .form textarea,
+    .form select{
+      width:100%;
+      background:#222;
+      color:white;
+      border:none;
+      padding:12px;
+      border-radius:8px;
+      margin-bottom:20px;
+      font-size:1rem;
+    }
+
+    .btn-group{
+      display:flex;
+      justify-content:space-between;
+    }
+    .btn-group input{
+      width:48%;
+      padding:12px;
+      background:orangered;
+      color:white;
+      border:none;
+      border-radius:8px;
+      cursor:pointer;
+      font-size:1rem;
+      transition:0.3s;
+    }
+    .btn-group input:hover{
+      background:white;
+      color:orangered;
+      box-shadow:0 0 12px orangered;
+    }
+
+    /* FOOTER FIXED BOTTOM */
+    footer{
+      background:#111;
+      padding:45px 0 20px;
+      border-top:2px solid orangered;
+    }
+
+    .footer-container{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-between;
+    }
+    .footer-column{
+      width:25%;
+      min-width:200px;
+      margin:10px 0;
+    }
+    .footer-column p a{
+      color: #ff3939;
+      text-decoration: none;
+    }
+    .footer-column h3{
+      color:orangered;
+      margin-bottom:10px;
+    }
+    .footer-bottom{
+      text-align:center;
+      padding-top:20px;
+      border-top:1px solid #333;
+      font-size:14px;
+      color:#ccc;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Abdullah Café</h1>
+
+    <nav>
+      <a href="./index.html"><i class="fa fa-home"></i> Home</a>
+      <a href="./menu.html"><i class="fa fa-coffee"></i> Menu</a>
+      <a href="./contact.html"><i class="fa fa-address-book"></i> Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="form">
+      <form>
+
+        <h2 style="text-align:center;margin-bottom:20px;font-size:1.8rem;color:orangered;">
+          ☕ Contact Us – We’d Love to Hear From You!
+        </h2>
+
+        <label>Your Name</label>
+        <input type="text" placeholder="Enter your full name" required>
+
+        <label>Your Email</label>
+        <input type="email" placeholder="example@gmail.com" required>
+
+        <label>Your Phone</label>
+        <input type="number" placeholder="03xx-xxxxxxx" required>
+
+        <label>Select Coffee Type</label>
+        <select required>
+          <option>Cold Coffee</option>
+          <option>Hot Coffee</option>
+          <option>Black Coffee</option>
+          <option>Cappuccino</option>
+          <option>Latte</option>
+        </select>
+
+        <label>Message / Feedback</label>
+        <textarea placeholder="Write something..."></textarea>
+
+        <div class="btn-group">
+          <input type="submit" value="Send Message">
+          <input type="reset" value="Reset">
+        </div>
+
+      </form>
+    </div>
+    <!-- GOOGLE MAP SECTION -->
+<div style="
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(255, 69, 0, 0.6);
+">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13613.232461829087!2d74.3036801!3d31.5203696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391904df8a79d28d%3A0xbaa2af9ef6afddfb!2sLahore%2C%20Pakistan!5e0!3m2!1sen!2s!4v1700000000000"
+    width="100%"
+    height="350"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+
+      <div class="footer-column">
+        <h3>About Café</h3>
+        <p>Abdullah Café serves the finest coffee with rich taste and a relaxing atmosphere.</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <p><a href="./index.html">Home</a></p>
+        <p><a href="./menu.html">Menu</a></p>
+        <p><a href="./contact.html">Contact</a></p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact Info</h3>
+        <p>Email: iamabdullah256@gmail.com</p>
+        <p>Phone: +92 320 8483651</p>
+        <p>Location: Lahore, Pakistan</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 Abdullah Café — Designed with ❤️
+    </div>
+  </footer>
+<script>
+  alert("Contact Us")
+</script>
+</body>
+</html>
